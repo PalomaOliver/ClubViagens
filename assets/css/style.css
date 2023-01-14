@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;400;500;900 & display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
+}
+
+.slide-reserva{
+    position: absolute;
+    justify-content: center;
+}
+
+
+.slider{ /*div geralzona*/
+    margin:0 auto; /*vai centralizar*/
+    width: 800px;
+    height: 400px;
+    overflow: hidden; /*o que estiver pra fora ficará escondido*/
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(234, 234, 234);
+}
+
+.slides{ /*definindo o tamanho da div onde passará o slide de imagens*/
+    width: 400%; /*pra cada imagem aparecer de uma vez, como são 4 então 400%, se fosse 100% iriam aparecer todas de uma vez*/
+    height: 400px;
+    display: flex; /*deixa uma imagem ao lado da outra*/
+}
+
+.slides input{ /*deixando os radios invisíveis*/
+    display: none; 
+}
+
+.slide{
+    width: 25%; /*cada imagem tem a largura de 25% da div slide -> 4/100=25 */
+    position: relative;
+    transition: 2s; /*efeito de transição*/
+}
+.slide img{ /*arrumando o tamanho das imagens dentro da div*/
+   /** width: 800px;*/
+   width: 100%;
+   height: 100%;
+}
+
+#slide1:checked ~ .first{ 
+    /* # é para o id, o checked é para saber se está selecionado ou não, se estiver vai fazer o que tá aqui dentro
+    o ~ é para que qdo o slide1 estiver checked ele quer que:*/
+    margin-left: 0;
+}
+#slide2:checked ~ .first{
+    margin-left: -25%; /*para fazer a imagem ir 25% da esquerda pra direita -> 25% pq são 4 imagens 4/100=25 */
+}
+#slide3:checked ~ .first{
+    margin-left: -50%;
+}
+#slide4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.manual-navigation{
+    position:absolute; /*só deixa mover a div dentro da div pai*/
+    bottom: 10px; /*bottom é embaixo*/
+    width: 850px;
+    display:flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 05px; /*espaçamento interno*/
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s; /*transição de 1s*/
+}
+
+.manual-btn:not(:last-child){ /*quando não for o último item*/
+    margin-right: 20px; /*espaçamento entre os botôes*/
+}
+
+
+.manual-btn:hover{ /*quando o mouse passar por cima dele*/
+    background-color: #fff;
+}
+
+/*
+#slide1:checked ~ .manual-navigation .manual-btn{ /*quando o radio slide1 estiver checked o fundo ficará branco
+    background-color: #fff;
+}
+#slide2:checked ~ .manual-navigation .manual-btn{ 
+    background-color: rgb(92, 45, 45);
+}
+#slide3:checked ~ .manual-navigation .manual-btn{ 
+    background-color: #fff;
+}
+#slide4:checked ~ .manual-navigation .manual-btn{ 
+    background-color: #fff;
+}
+*/
+
+.slide-reserva{
+    display: flex;
+}
+.bloco-infos-viagem{
+    width: 300px;
+    height: 250px;
+    margin-left: 90px;
+    border-radius: 10px;
+    border: 1px solid rgb(203, 201, 201);
+    margin-right: center;
+    box-shadow: 5px 5px rgb(234, 234, 234);
+
+}
+
+.bloco-infos-viagem span{
+    text-align: center;
+    margin: 20px;    
+}
+
+.selecao-estados {
+    width: 150px;
+    border-radius: 20px;   
+    margin-left: 50px;
+    
+}
+
+.botao-reservar button{
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    margin: 40px 50px;
+    margin-top: 20px;
+    background-color: rgb(36, 46, 141);
+    
+}
+
+.botao-reservar a {
+    color:#fff;
+    font-size: 14px;
+}
+
+.allinclusive {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-left: 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(203, 201, 201);
+    justify-content: flex;
+    margin: 0;
+    justify-items: center;
+    bottom: 200px;       
+    margin-top: 10px;
+    box-shadow: 5px 5px rgb(234, 234, 234);
+
+}
+
+.allinclusive img {
+    width: 30px;  
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.allinclusive span{
+    padding: 0px;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 25px ;
+}
+
+.voo-ida-volta {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-left: 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(203, 201, 201);
+    justify-content: flex;
+    margin: 0;
+    margin-top: 20px;
+    justify-items: center;
+    bottom: 200px;       
+    box-shadow: 5px 5px rgb(234, 234, 234);
+
+}
+
+.voo-ida-volta img {
+    width: 40px;  
+    height: 40px;
+    margin-top: 05px;
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.voo-ida-volta span{
+    padding: 0px;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 25px ;
+}
+
+.informacoes-viagem{
+    position: absolute;
+    margin: 500px 300px 0;
+    display: wrap;
+    align-items: center;
+    width: 75%;
+}
+
+.informacoes-viagem h2{
+    padding: 10px;
+    margin-bottom: 0px;
+    color:rgb(36, 46, 141);
+    
+}
+.faq-viagem{
+    padding: 0px;
+    position: absolute;
+    justify-content: flex;
+    width: 65%;
+}
+
+.itemfaq input{
+    position: absolute;
+    opacity:0;
+    z-index:-1;
+}
+
+.itemfaq{
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.titulo:after{
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.conteudo-faq{
+    padding: 0 1em;
+    color: grey;
+    max-height: 0;
+    transition: all 0.35s;
+
+}
+
+input:checked + .titulo:after{
+    transform: rotate(90deg);
+}
+
+input:checked ~ .conteudo-faq{
+    max-height: 100vh;
+    padding: 1em;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(234, 234, 234);
+}

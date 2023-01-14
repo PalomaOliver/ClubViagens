@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Escolha sua viagem</title>
+</head>
+<body>
+    <div class="slide-reserva">
+        <div class="slider"><!--div slideshow-->
+                <section class="slides">
+                    <!--RADIOS COM O SLIDE DE IMAGENS, O CARROSEL DE IMAGENS-->
+                    <input type="radio" name="slide" id="slide1">
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <!--FIM DOS RADIOS -->
+
+                    <!--SLIDE DE IMAGENS-->
+                    <div class="slide first">
+                        <img src="./assets/img/cancun1.png" alt="Vista aérea da horla de Cancun no pôr do sol com os resorts e o mar">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/cancun2.png" alt="Vista aérea da horla de Cancun com os resorts e o mar">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/cancun3.png" alt="Imagem de um deck no meio do mar">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/cancun4.png" alt="Foto de duas esculturas na areia da praia em cancun">
+                    </div>
+                    <!--FIM DOS SLIDES DE IMAGENS-->
+                    <div class="manual-navigation">
+                        <label for="slide1" class="manual-btn"></label>
+                        <label for="slide2" class="manual-btn"></label>
+                        <label for="slide3" class="manual-btn"></label>
+                        <label for="slide4" class="manual-btn"></label>
+                    </div> 
+                </section>                
+        </div>
+
+        <section class="bloco-infos-viagem" >
+                <span>
+                        <p>Viaje entre</p>
+                        <h3>25/03 e 30/11</h3>
+                        <p>05 diárias a partir de </p>
+                        <h2>R$1.884</h2>
+                </span>
+
+                    
+                <div class="selecao-estado-titulo">
+                    <h6>Selecione o estado de saída</h6> 
+                </div>
+                <select id="selecao-estados" name="selecao-estados"> 
+                            <option value="#">Selecione</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                </select>                      
+
+                <div class="botao-reservar">
+                    <button><a href="#">Reservar</a></button>
+                </div>
+                <section class="icones-viagem">
+                    <div class="allinclusive">
+                        <img src="./assets/img/allinclusive.png" alt="icone de drink">
+                        <span>
+                            
+                            <p>Viaje sem preocupação!</p>
+                            <h3> All Inclusive </h3>
+                        </span>
+                    </div>
+                    <div class="voo-ida-volta">
+                        <img src="./assets/img/aereo.png" alt="icone de aviões indo e voltando">
+                        <span>
+                            <p>Passagens inclusas!</p>
+                            <h3> Ida e Volta </h3>
+                        </span>
+                    </div>
+                </section>
+        </section>
+    </div>
+
+        <section class="informacoes-viagem">
+            <h2>Informações sobre a viagem</h2>
+
+            <div class="faq-viagem">
+                <div class="itemfaq">
+                    <input type="radio" id="faq1" name="itemfaq">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni nisi earum inventore cum repellat, officiis temporibus perspiciatis possimus modi ipsam ut vero debitis ab, itaque incidunt, eos sit exercitationem.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolore, reprehenderit accusantium vero ad ratione. Soluta optio consequatur officiis tenetur laboriosam nostrum, at iste cum temporibus, dolorem, minima voluptates sint!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ipsum beatae cumque deleniti officia illum architecto sint aut minus fuga velit, voluptatibus unde temporibus facere? Nisi placeat dolorem eius tempora!
+                    </span>
+                    <label for="faq1" class="titulo">Mais informações</label>
+                    <div class="conteudo-faq">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure eius eveniet beatae, quaerat perspiciatis error nisi cupiditate velit, quibusdam magnam, quod repellat debitis! Optio alias quidem aliquid nobis accusamus sint!
+                    </div>
+                </div>
+                <h2>Conheça o seu destino</h2>
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/eMgKWWVTSTk" title="Quais passeios fazer pra curtir Cancún? | Hora do Break" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h2>Confira o refulamento</h2>
+                <div class="itemfaq">
+                    <input type="radio" id="faq2" name="itemfaq">
+                    <label for ="faq2" class="titulo">Fiz a compra, e agora?</label>
+                    <div class="conteudo-faq">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta autem esse incidunt quasi reiciendis consequatur dolore qui, et, repudiandae ut ipsum ratione at voluptate obcaecati vitae placeat quod similique quos.
+                    </div>
+                </div>
+                <div class="itemfaq">
+                    <input type="radio" id="faq3" name="itemfaq">
+                    <label for="faq3" class="titulo">Formas de pagamento</label>
+                    <div class="conteudo-faq">     
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, veniam voluptates praesentium dolor ducimus accusamus atque repellat voluptatum sunt, obcaecati, ipsam id facilis. Quas sapiente sed ratione magnam tenetur eum!
+                    </div>
+                </div>
+                <div class="itemfaq">
+                    <input type="radio" id="faq4" name="itemfaq">
+                    <label for="faq4" class="titulo">Validade</label>
+                    <div class="conteudo-faq">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nemo dolorem veniam debitis rerum saepe ex. Dolorem voluptatibus alias quod cumque suscipit et maiores ea excepturi. Deserunt voluptatum quis delectus!
+                    </div>
+                </div>
+                <div class="itemfaq">
+                    <input type="radio" id="faq5" name="itemfaq">
+                    <label for="faq5" class="titulo">Documentação para a viagem</label>
+                    <div class="conteudo-faq">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sit, distinctio assumenda at officiis rerum non, iste aliquid asperiores nesciunt eius veritatis odio! Molestias ipsam culpa exercitationem veritatis accusamus necessitatibus!
+                    </div>
+                </div>
+            </div>
+               
+
+            
+
+        </section>
+
+                    
+        
+
+
+    
+
+      
+    
+    
+    
+
+
+</body>
+</html>
