@@ -18,6 +18,112 @@ body {
     
 }
 
+/*menu*/
+
+.container-menu{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 550px;
+
+}
+
+.logo img{
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a {
+    color: rgb(134, 134, 134);
+   text-decoration: none; /*tirando  o sublinhado do link*/ 
+   padding-right: 10px; /*espaçando a linha*/
+   font-size: 14px;
+   margin-left: 30px;
+   position: relative; /*para deixar mudar a posição*/;
+   align-items: center;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: rgb(36, 8, 249);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+
+}
+
+.divfaleconosco button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(203, 201, 201);
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(234, 234, 234);
+    margin-left: 15px;
+    color: rgb(134, 134, 134);
+}
+
+.perfil button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(203, 201, 201);
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(234, 234, 234);
+    margin-left: 15px;
+    color: rgb(134, 134, 134);
+}
+
+.pesquisar{
+    display: flex;
+    justify-content: space-between; /*o primeiro item vai pra direita e o segundo pra esquerda*/
+    align-items: center; /*alinha no centro*/
+    border: 1px solid rgb(203, 201, 201);
+    box-shadow: 5px 5px rgb(234, 234, 234);
+    border-radius: 10px;
+}
+
+.pesquisar img{
+    margin-right: 10px;
+}
+
+.pesquisar input{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border:none;
+    cursor: pointer;
+    margin-right: 0px; /*espaço entre o input e o ícone*/
+    color: rgb(134, 134, 134);
+}
+
+
+/*slides*/
 .slide-reserva{
     position: absolute;
     justify-content: center;
@@ -31,6 +137,16 @@ body {
     overflow: hidden; /*o que estiver pra fora ficará escondido*/
     border-radius: 10px;
     box-shadow: 5px 5px rgb(234, 234, 234);
+}
+
+h6{
+    margin-left: 80px;
+    padding: 5px;
+}
+select{
+    margin-left: 100px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .slides{ /*definindo o tamanho da div onde passará o slide de imagens*/
@@ -120,12 +236,11 @@ body {
     border: 1px solid rgb(203, 201, 201);
     margin-right: center;
     box-shadow: 5px 5px rgb(234, 234, 234);
-
 }
 
 .bloco-infos-viagem span{
     text-align: center;
-    margin: 20px;    
+    margin: 10px;   
 }
 
 .selecao-estados {
@@ -285,3 +400,5 @@ iframe {
     border-radius: 10px;
     box-shadow: 5px 5px rgb(234, 234, 234);
 }
+
+
